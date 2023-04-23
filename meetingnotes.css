@@ -2,6 +2,10 @@
 
 body {
     background-color: beige;
+    margin-top: 1cm;
+    margin-bottom: 15mm;
+    margin-left: 0.5in;
+    margin-right: 60Q;
 }
 
 header {
@@ -10,6 +14,14 @@ header {
 
 main {
     background-color: rgba(128,255,128, 0.25);
+    padding: 10px 10px 10px 10px;
+}
+
+section {
+    padding-top: 5vh;
+    padding-bottom: 5vmin;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 ol {
@@ -26,4 +38,13 @@ footer {
 
 form {
     background-color: hsla(90, 100%, 50%, 0.5);
+}
+
+input {
+    margin: 10px 10px 10px 10px;
+}
+
+div {
+    width: 400px;
+    margin: auto;
 }
