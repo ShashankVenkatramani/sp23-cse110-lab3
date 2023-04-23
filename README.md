@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3
 
-[Github Pages Link](https://shashankvenkatramani.github.io/Lab2_Starter/)
+[Github Pages Link](https://shashankvenkatramani.github.io/sp23-cse110-lab3/)
