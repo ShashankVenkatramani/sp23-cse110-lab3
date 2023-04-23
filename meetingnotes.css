@@ -1,0 +1,29 @@
+/* Style sheet for index.html */
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(128,255,128);
+}
+
+main {
+    background-color: rgba(128,255,128, 0.25);
+}
+
+ol {
+    background-color: #FFF;
+}
+
+ul {
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: hsl(30, 100%, 50%);
+}
+
+form {
+    background-color: hsla(90, 100%, 50%, 0.5);
+}
