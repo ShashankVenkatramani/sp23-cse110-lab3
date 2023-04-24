@@ -14,11 +14,18 @@ header {
 
 main {
     background-color: rgba(128,255,128, 0.25);
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 200px 10px;
+    border-style: dashed;
+    border-color: aquamarine;
+    border-width: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section {
-    padding-top: 5vh;
+    padding-top: 10vh;
     padding-bottom: 5vmin;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -40,11 +47,113 @@ form {
     background-color: hsla(90, 100%, 50%, 0.5);
 }
 
-input {
+input, label {
     margin: 10px 10px 10px 10px;
 }
 
 div {
     width: 400px;
     margin: auto;
+}
+
+i {
+    display: block;
+}
+
+details {
+    display: inline;
+}
+
+.Candidates {
+    width: 400px;
+    height: 300px;
+}
+
+img.Alternates {
+    width: 200px;
+    height: 150px;
+}
+
+#video {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+#topheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#meetingheader {
+    top:0;
+    position: sticky;
+}
+
+main > h2 {
+    background-color: gray;
+}
+
+footer *:hover {
+    background-color: blue;
+}
+
+a:active {
+    background-color: red;
+}
+
+#meetingoverview {
+    order: -1;
+}
+
+#alternates {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "first second"
+        "third fourth";
+}
+
+#Alt1 {
+    grid-area: first;
+}
+
+#Alt2 {
+    grid-area: second;
+}
+
+#Alt3 {
+    grid-area: third;
+}
+
+#Alt4 {
+    grid-area: fourth;
+}
+
+[href="https://meta.com"] {
+    text-decoration: overline;
+}
+
+@media (max-width: 400px) {
+    .Candidates {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+form input {
+    padding-left: 500px;
+}
+
+textarea ~ label {
+    color: aquamarine;
+}
+
+datalist + label {
+    font-weight: 700;
+}
+
+.author.text {
+    text-decoration: overline;
 }

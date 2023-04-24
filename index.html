@@ -6,11 +6,19 @@
         <meta charset="UTF-8">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="meetingnotes.css">
+        <style>
+            h2 {
+                text-align: center;
+            }
+            * {
+                font-family: Arial, sans-serif;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <h1>8-Ball Meeting Minutes Tracker</h1>
+            <h1 id="topheader" style="color:blue;text-decoration: underline;">8-Ball Meeting Minutes Tracker</h1>
             <hr>
             <div>
                 <h2>Useful Links</h2>
@@ -23,10 +31,18 @@
         </header>
         <hr>
         <main>
-            <h2>Apr 14: Initial Brainstorming Meeting</h2>
+            <h2 id="meetingheader">Apr 14: Initial Brainstorming Meeting</h2>
             <h3>Attendees: <i>Mark Zuckerberg, Elon Musk, Jeff Bezos</i></h3>
             <br>
             <section>
+                <h2>General Task Items</h2>
+                <ul>
+                    <li><strong>Mark:</strong> Finalize developers</li>
+                    <li><strong>Elon:</strong> Hire graphic designer</li>
+                    <li><strong>Jeff:</strong> Contact management for project clearance</li>
+                </ul>
+            </section>
+            <section id="meetingoverview">
                 <h2><span>Meeting Overview</span></h2>
                 <p> Meeting agenda includes deciding future steps for the Magic 8 ball project. We
                 need to talk about who we will hire for our first meeting on this project!
@@ -40,14 +56,6 @@
                 consequuntur, optio ducimus reprehenderit minus culpa, ipsam consequatur blanditiis</p>
             </section>
             <section>
-                <h2>General Task Items</h2>
-                <ul>
-                    <li><strong>Mark:</strong> Finalize developers</li>
-                    <li><strong>Elon:</strong> Hire graphic designer</li>
-                    <li><strong>Jeff:</strong> Contact management for project clearance</li>
-                </ul>
-            </section>
-            <section>
                 <h2>Dev Timeline</h2>
                 <ol>
                     <li>Create HTML website</li>
@@ -59,11 +67,18 @@
             </section>
             <section>
                 <h2>Current Dev Candidate</h2>
-                <img src="images/cat_dev.jpg" alt="Dev Candidate Image (is cute)" width="400" height="300">
+                <img class="Candidates" src="images/cat_dev.jpg" alt="Dev Candidate Image (is cute)">
                 <details>
                     <summary>Qualities</summary>
                     <p>Loves eating fish, salmon, sushi, and cheese. Has a knack for pushing things off tables. Was formerly Head of Robotics at Amazon</p>
                 </details>
+                <h2>Alternates</h2>
+                <div id="alternates">
+                    <img class="Alternates" src="images/cat1.avif" alt="Alt1" id="Alt1">
+                    <img class="Alternates" src="images/cat2.webp" alt="Alt2" id="Alt2">
+                    <img class="Alternates" src="images/cat3.jpeg" alt="Alt3" id="Alt3">
+                    <img class="Alternates" src="images/cat4.jpeg" alt="Alt4" id="Alt4">
+                </div>
             </section>
             <section>
                 <h3>Meeting Audio</h3>
@@ -71,7 +86,7 @@
                     <source src="videos/phone_screen.mp3" type="audio/mpeg">
                 </audio>
                 <h3>Meeting Video</h3>
-                <video width="320" height="240" controls>
+                <video id="video" controls>
                     <source src="videos/interview.mp4" type="video/mp4">
                 </video>
             </section>
@@ -110,7 +125,7 @@
                 </fieldset>
             </form>
             <hr>
-            <p>Author: Shashank Venkatramani</p>
+            <p class="author text">Author: Shashank Venkatramani</p>
             <p><a href="https://github.com/ShashankVenkatramani">github</a></p>
         </footer>
     </body>
